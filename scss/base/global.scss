@@ -1,0 +1,263 @@
+@import "variables.scss"; // variable.less
+
+/*      All Global css
+----------------------------*/
+body{
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: $open;
+  color: #777;
+  font-size: 14px;
+  line-height: 24px;
+}
+h1, h2, h3, h4, h5, h6, p, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-family: inherit;
+  font-weight: normal;
+  color: inherit;
+}
+
+// h1,h2,h3,h4,h5,h6{
+//   color: $dark;
+//   font-weight: 700;
+// }
+
+
+
+a{
+  -webkit-transition:all 0.3s ease 0s;
+  -moz-transition:all 0.3s ease 0s;
+  -o-transition:all 0.3s ease 0s;
+  -ms-transition:all 0.3s ease 0s;
+  transition:all 0.3s ease 0s;
+  font-weight: normal;
+  color: inherit;
+  font-family: inherit;
+  &:hover,&:focus,&.active{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+input{
+  -webkit-transition:all 0.3s ease 0s;
+  -moz-transition:all 0.3s ease 0s;
+  -o-transition:all 0.3s ease 0s;
+  -ms-transition:all 0.3s ease 0s;
+  transition:all 0.3s ease 0s;
+}
+
+.topbar-list,
+.social-icon,
+.singel-product-content,
+.shopping-cart,
+#clockdiv,
+.widget-content,
+.sorting-item,
+.cart-total-cost,
+.filter-option,
+.footer-content{
+  ul{
+    padding: 0px;
+    margin: 0px;
+    li{
+      list-style: none;
+    }
+  }
+}
+
+/*
+-----------------------------------------
+  GLOBAL
+-----------------------------------------
+*/
+
+
+.gearx-btn-black,
+.gearx-btn-transparent,
+.gearx-btn-red,
+.gearx-btn,
+.form-submit input[type="submit"]{
+  font-family: $open;
+  color: $white;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  border-radius: 0px;
+  padding:12px 30px;
+  font-weight: 700;
+  transition:all 0.3s ease 0s;
+  background: $orange;
+  letter-spacing: 1px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  &:hover,&:focus{
+    color: $white;
+    transition:all 0.3s ease 0s;
+    outline: 0;
+    background: #c1030f;
+  }
+}
+.gearx-btn-red{
+  background: $red;
+}
+.gearx-btn-black{
+  background: $black;
+}
+.gearx-btn-transparent{
+  background: transparent;
+  color: $black;
+  border: 1px solid $border;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="url"],
+input[type="search"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="time"],
+.form-control,textarea,textarea.form-control{
+  height: 48px;
+  border-radius: 0px;
+  box-shadow: none;
+  border: none;
+  border: 1px solid #e2e2e2;
+  &:focus{
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid #e2e2e2;
+  }
+}
+textarea, textarea.form-control {
+  height: auto;
+  padding: 10px;
+  min-height: 146px;
+  width: 100%;
+}
+button{
+  &:focus{
+    outline: 0;
+  }
+}
+.pr{
+  position: relative;
+}
+.no-margin{
+  margin: 0px;
+}
+.no-padding{
+  padding: 0px;
+}
+.section-padding{
+  padding: 60px 0px 35px;
+}
+.section-heading {
+  .heading-title{
+    color: $white !important;
+  }
+  
+}
+.sec-title{
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+    line-height: 26px;
+  }
+.square {
+  width: 45px;
+  height: 30px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  &:before{
+    content: '';
+    width: 1px;
+    height: 30px;
+    transform: skew(-25deg);
+    background: red;
+    position: absolute;
+    top: -30px;
+    left: 25px;
+    right: 0;
+    margin: 0 auto;
+  }
+  &:after{
+    content: '';
+    width: 1px;
+    height: 30px;
+    transform: skew(-25deg);
+    background: red;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 25px;
+    margin: 0 auto;
+  }
+
+}
+
+.line-angel{
+  position: relative;
+}
+.line-angel:after,
+.line-angel:before{
+  width: 1px;
+  height: 30px;
+  background: #c1030f;
+  content: '';
+  position: absolute;
+  transform: rotate(25deg);
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+
+}
+
+.line-angel:after{
+  bottom: -32px;
+  left: -40px;
+  transform: rotate(25deg);
+}
+.line-angel:before{
+  top: -30px;
+  left: 10px;
+}
+.float-clear{
+  clear: both;
+}
+.section-bottom{
+  padding-bottom: 35px;
+}
+.box-shadow {
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
+}
+.scroll-to-top {
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  background: $red;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 20px;
+  border-radius: 100px;
+  position: fixed;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  z-index: 99; 
+}

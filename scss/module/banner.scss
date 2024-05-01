@@ -1,0 +1,326 @@
+@import "../base/variables"; // variable.less
+
+
+/*-------------------------------------
+BANNER
+---------*/
+
+.breadcumb-content {
+    h2{
+      font-size: 30px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    }
+}
+.breadcumb-banner{
+  margin-bottom: 65px;
+}
+.breadcumb-banner,
+.banner-counter{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner-counter{
+  background: url(../images/banner/3.jpg);
+}
+.banner-bottom-left{
+  background: url(../images/product/offer-2.jpg);
+}
+.banner-bottom-right{
+    background: url(../images/product/offer-1.jpg);
+}
+.breadcumb-banner{
+  background: color(blue);
+  padding: 100px 0px 85px;
+  position: center;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 28, 76, .9);
+}
+
+.breadcumb-banner{
+  h2{
+    font-size: 30px;
+    font-weight: bold;
+    font-weight: 800;
+  }
+  .parallelogram{
+    background: rgba(255, 255, 255, .1);
+    width: 560px;
+    height: 100%;
+    position: absolute;
+    right: 120px;
+    top: 0;
+    &:before{
+      content: '';
+      background: $orange;
+      position: absolute;
+      width: 60px;
+      height: 100%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+
+    }
+  }
+}
+
+.banner-area{
+  h2{
+    font-size: 65px;
+    font-style: italic;
+    color: $white;
+    line-height: 66px;
+    font-weight: 900;
+  }
+  h3{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 23px;
+    margin-bottom: 45px;
+    font-weight: 400;
+  }
+}
+.banner-bottom-section{
+  margin-top: 10px;
+}
+
+.widget-content{
+  position: relative;
+  .product-item-content{
+    position: absolute;
+    bottom: 45px;
+    left: 60px;
+    .product-price{
+      font-size: 45px;
+      color: $white;
+    }
+    p{
+      color: $white;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+}
+.banner-image-content{
+  img{
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  .product-item-content{
+    padding: 225px 35px 50px;
+    position: relative;
+    z-index: 2;
+    .product-price{
+      font-size: 45px;
+      color: $white;
+    }
+    p{
+      color: $white;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+}
+.banner-image-content {
+  &:hover{
+    .parallelogram{
+      left: 15px;
+      background: $orange;
+      opacity: 1;
+      transition: .3s;
+    }
+  }
+  .parallelogram{
+    width: 300px;
+    height: 100%;
+    background: $red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: .8;
+    z-index: 1;
+    transition: .3s;
+  }
+
+}
+.banner-bottom-left{
+  .parallelogram{
+    background: #102082;
+  }
+}
+
+#clockdiv {
+  position: relative;
+  .parallelogram{
+    background: $red;
+    width: 125px;
+    height: 105px;
+    text-align: center;
+    line-height: 105px;
+    span{
+      font-size: 50px;
+      font-weight: 900;
+      color: $white;
+    }
+  }
+  .smalltext{
+    font-weight: bold;
+    color: $white;
+    padding-top: 10px;
+    padding-right: 45px;
+    text-align: center;
+  }
+  ul{
+    li{
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+}
+.product-deal {
+    padding-left: 50px;
+    position: relative
+}
+.hours-parallelogram {
+  margin-left: 160px;
+  display: inline-block;
+  text-align: center;
+}
+.day-parallelogram {
+  margin-top: 105px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+.minute-parallelogram {
+  margin-left: 237px;
+  text-align: center;
+  display: inline-block;
+  margin-top: -38px;
+}
+.second-parallelogram {
+  margin-left: 313px;
+  display: inline-block;
+  margin-top: -37px;
+}
+.watch-price {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 260px;
+}
+.hot-product .price {
+    width: 90px;
+    height: 90px;
+    background: rgba(102, 163, 52, 0.8);
+    border-radius: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    -webkit-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    transform: skew(0deg);
+    line-height: 90px;
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: -55px;
+}
+
+
+
+
+
+
+.newsletter-popup .newsletter-popup-container {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  right: 15px;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: none;
+  text-align: center;
+  -webkit-transform: translateY(-40px);
+  transform: translateY(-40px);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  padding: 50px 50px;
+  overflow: hidden;
+}
+.newsletter-popup.popup-visible .newsletter-popup-container {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.newsletter-popup .newsletter-popup-container .bts-popup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+}
+.bts-popup-close{
+  i{
+    cursor: pointer;
+    color: $black;
+    font-size: 20px;
+  }
+}
+
+.newsletter-popup.popup-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.newsletter-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9991;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.social-icon {
+  .parallelogram{
+    background: $red;
+    color: $white !important;
+  }
+}
+.newsletter-popup-container{
+  .subscribe-form{
+    input{
+      border: 1px solid $border !important;
+    }
+  }
+}

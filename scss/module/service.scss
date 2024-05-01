@@ -1,0 +1,41 @@
+@import "../base/variables"; // variable.less
+
+/*-------------------------------------
+SERVICE
+---------*/
+
+.service-banner{
+  background: url(../images/banner/4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 95px  0px 65px;
+}
+.service-delivery{
+  padding: 60px 30px;
+  i{
+    color: $white;
+    font-size: 50px;
+  }
+ 
+  p{
+    color: $white;
+  }
+}
+.service-delivery{
+   h3{
+    color: $white;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+.bg-red{
+  background: rgba(194, 24, 31, .8);
+}
+.bg-blue{
+  background: rgba(11, 30, 151, .8);
+}
+.bg-orange{
+  background: rgba(255, 91, 10, .7);
+}

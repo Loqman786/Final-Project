@@ -1,0 +1,66 @@
+
+/*------------------------------------------------------------------
+    Template Name:	Gearx
+    Template URI: http://enroutedigitallab.com/html/Gearx
+    Description :: Business Shop Template
+    Author: enroutedigitallab
+    Author URI: http://enroutedigitallab.com/
+    License: GPL V2 or Later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Version: 1.0
+*/
+
+/*------------------------------------------------------------------
+    PROJECT SASS
+--------------------------------------------------------------------
+
+1.0 Base Scss
+	 Variable
+	 Global
+
+2.0 Layout Scss
+	 Footer
+	 Header
+
+3.0 Module Scss
+	 Banner
+	 Blog
+	 Contact
+	 Icon
+	 Product
+	 Service
+	 Single Product
+
+4.0 Pages Scss
+	 Home
+
+5.0	Responsive scss
+6.0	style scss
+
+
+*/
+
+
+
+@import "base/global";
+@import "layout/header";
+@import "module/slider";
+@import "module/singel-product";
+@import "module/service";
+@import "module/blog";
+@import "module/banner";
+@import "module/product";
+@import "module/contact";
+@import "layout/footer";
+@import "module/icon";
+@import "pages/home";
+@import "responsive";
+
+
+
+
+
+
+
+
+

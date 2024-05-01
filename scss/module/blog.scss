@@ -1,0 +1,257 @@
+@import "../base/variables"; // variable.less
+
+
+
+/*-------------------------------------
+BLOG SPACE
+---------*/
+.blog-area{
+  margin-bottom: 30px;
+  border: 1px solid $border;
+  .gearx-btn-red{
+    padding: 8px 22px;
+    font-size: 13px;
+    &:hover{
+      background: $orange;
+    }
+  }
+}
+.meta{
+  span{
+    font-size: 12px;
+    color: #b6b6b6;
+    letter-spacing: 1px;
+  }
+}
+.blog-content {
+  padding: 30px;
+  h4{
+    margin-bottom: 12px;
+  }
+  .meta {
+    margin-bottom: 5px;
+  }
+  .gearx-btn-red{
+    padding: 8px 30px;
+  }
+}
+.point {
+  width: 4px;
+  height: 4px;
+  background: #c1030f;
+  display: inline-block;
+  border-radius: 100px;
+  margin-bottom: 2px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.blog-sidebar-box {
+  padding: 45px 50px;
+  border: 1px solid $border;
+  margin-bottom: 30px;
+}
+
+.blog-sidebar-box {
+  ul{
+    li{
+      a{
+        padding: 7px 0px;
+        display: block;
+        border-top: 1px solid #e2e2e2;
+        &:hover{
+          color: $red;
+        }
+      }
+    }
+  }
+}
+.blog-sidebar-box{
+  .widget-content{
+    h3{
+      margin-bottom: 20px;
+    }
+  }
+}
+.recent-post{
+  li{
+    a{
+      padding: 14px 0 !important;
+      &:before{
+        display: none;
+      }
+    }
+    h5{
+      margin: 16px;
+      font-weight: bold;
+      color: #000;
+      font-size: 15px;
+    }
+  }
+}
+.tag-cloud {
+  a{
+    border: 1px solid $border;
+    margin-right: 5px;
+    font-size: 12px;
+    padding: 2px 13px;
+    display: inline-block;
+    margin-bottom: 9px;
+    &:hover{
+      background: $red;
+      color: $white;
+    }
+  }
+
+}
+.tag-line{
+  border-bottom: 1px solid $border;
+  padding-bottom: 20px;
+}
+.blog-single{
+  h2{
+    font-size: 42px;
+    color: #000;
+    font-weight: bold;
+   
+  }
+  .social-icon,
+  .tag-cloud{
+    margin-top: 20px;
+  }
+}
+.blog-single-content{
+  .para{
+    margin-bottom: 28px;
+  }
+  h2{
+     margin-bottom: 27px;
+  }
+}
+.blockquote-content:before{
+  background: url("../images/blog/blockquote.png");
+  content: '';
+  padding: 38px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 7px;
+  float: left;
+}
+.blockquote-box {
+  margin: 40px 0px;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 33px 0px;
+  strong{
+    color: $black;
+    font-size: 14px;
+  }
+}
+.author-name{
+  font-size: 12px;
+  color: $deep;
+  font-weight: 400;
+}
+.comment-content {
+  margin-top: 40px;
+}
+.author-content {
+  border-top: 1px solid #e2e2e2;
+  padding-top: 40px;
+  margin-bottom: 65px;
+}
+.social-icon {
+  ul{
+    li{
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+}
+.social-icon{
+  ul{
+    li{
+      a{
+        &:hover{
+          color: $red;
+        }
+      }
+    }
+  }
+}
+.message-box {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+.author-content.third{
+  padding-left: 65px;
+}
+.blockquote-content {
+  font-size: 20px;
+  color: black;
+}
+.author-text {
+  margin-top: 15px;
+  margin-left: 25px;
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    }
+}
+.comment-sec h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 50px;
+}
+.author-content img {
+  width: 113px;
+  height: 113px;
+  float: left;
+  margin-right: 25px;
+}
+.faq-list {
+    margin-bottom: 30px;
+    padding-top: 50px;
+    border-top: 1px solid #ddd;
+}
+.heading-family{
+  h1,h2,h3,h4,h5,h6{
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.pagination-bar{
+  margin-top: 30px;
+  padding: 0px;
+  li{
+    display: inline-block;
+    a{
+    font-weight: 600;
+    color: #000;
+    width: 45px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    border: 1px solid #e2e2e2;
+    transition: .3s;
+    margin: 0px 5px 10px;
+    border-radius: 2px;
+    &:hover{
+      background: $red;
+      transition: .3s;
+      color: $white;
+
+    }
+    }
+  }
+}
+.pagination-bar li a.active{
+  background: $red;
+  color: $white;
+}
